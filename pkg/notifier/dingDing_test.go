@@ -28,7 +28,7 @@ func TestDingDing_Post(t *testing.T) {
 	}))
 	defer ts.Close()
 
-	url := "https://oapi.dingtalk.com/robot/send?access_token=135216fa4875c302b6d1dd98ab3fc23b0beb721de31feb7e40801837b513a41e"
+	url := "https://oapi.dingtalk.com/robot/send?access_token=***"
 	dingDing, err := NewDingDing(url, "13752557129,13540484322", "text")
 	require.NoError(t, err)
 
